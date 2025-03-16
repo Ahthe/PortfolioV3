@@ -175,8 +175,8 @@ main {
     grid-template-areas:
         ". header header ."
         ". intro . ."
-        ". blog blog ."
         ". work work ."
+        ". blog blog ."
         "footer footer footer footer";
 }
 

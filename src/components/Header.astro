@@ -1,0 +1,17 @@
+---
+interface Props {
+  variant?: 'default' | 'small';
+}
+
+const { variant = 'default' } = Astro.props;
+---
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    document.documentElement.classList.add('loaded');
+}, false);
+</script>
+
+<h1 class={`logo ${variant === 'small' ? 'logo-small' : ''}`}>
+  <a href="/"> Syed Ahthesham <br> Ali </a>
+</h1>

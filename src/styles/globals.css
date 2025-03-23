@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  /* --background: #f0efef; */
+  --background-invert: #131517;
+}
+
+html,
+body {
+  background: var(--background) !important;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+}
+
+html,
+body {
+  overscroll-behavior-y: none;
+  /* scrollbar-gutter: stable; */
+}
+
+body {
+  overflow-y: scroll; /* Always show vertical scroll */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  /* -ms-overflow-style: none; */
+  /* scrollbar-width: none; */
+}
+
+.scrollbar-hide {
+  /* Firefox */
+  scrollbar-width: none;
+  /* IE and Edge */
+  -ms-overflow-style: none;
+}
+
+/* Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Menu should be visible if the following conditions are met:
+  1. The page is loaded
+  2. The hero is not in view
+  3. The page is not 404
+ */
+body[data-router-pathname="/"].loaded:not(.hero-in-view) #menu-bar,
+body.loaded .menu-button {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* For any other route */
+body:not([data-router-pathname="/"]) #menu-bar {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+body[data-router-pathname="/404"] #menu-bar {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* body[data-router-pathname="/"].hero-in-view #menu-bar,
+body[data-router-pathname="/404"] #menu-bar {
+  opacity: 0 !important;
+  pointer-events: none !important;
+} */
+
+@keyframes hue-rotate-animation {
+  0% {
+    filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(360deg);
+    -webkit-filter: hue-rotate(360deg);
+  }
+
+  100% {
+    filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-[-25%] from-blue-500 via-green-500 to-amber-600 to-[125%] text-transparent bg-clip-text inline box-decoration-clone;
+  }
+  .animate-gradient {
+    animation: hue-rotate-animation 12s infinite 500ms;
+    -webkit-animation: hue-rotate-animation 12s infinite 500ms;
+    animation-duration: 12s !important;
+  }
+  .paused {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+  }
+  .running {
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+  }
+}
+
+.hide-hero .hero {
+  opacity: 0;
+}
+
+/* BLOG */
+.prose p,
+.prose li {
+  color: #333;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  /* text-wrap: balance; */
+  text-wrap: pretty;
+}
+
+.prose p {
+  margin-top: 14px;
+}
+
+.prose strong {
+  font-weight: 500;
+  color: #191919;
+  letter-spacing: -0.005em;
+  font-weight: 500;
+
+  /* Highlight? */
+  /* color: #191919;
+    background: #FFEB3B;
+    padding: 2px 3px 1px 3px;
+    border-radius: 3px;
+    font-size: 95%; */
+}
+
+.prose ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.prose li {
+  margin-top: 10px;
+}
+
+.prose a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 0.05em;
+}
+
+.prose h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 60px;
+}
+
+.prose h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+/* Override spacing here */
+.prose h2 + h3 {
+  margin-top: 16px;
+}
+
+.prose h2,
+.prose h3,
+.prose h4 {
+  line-height: 1.25;
+  text-wrap: pretty;
+  scroll-margin-top: var(--top-gutter, 150px);
+}
+
+.prose hr {
+  margin: 40px 0;
+}

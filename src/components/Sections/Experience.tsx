@@ -5,144 +5,117 @@ import Image from "next/image";
 export default function Experience() {
   const data = [
     {
+      title: "2024 - Present",
+      content: (
+        <div>
+          <p className="text-black text-sm md:text-base font-medium mb-2">
+            Software Engineer - American Muslim Center Dearborn
+          </p>
+          <p className="text-gray-700 text-xs md:text-sm font-normal mb-4">
+            Dearborn, MI, Hybrid
+          </p>
+          <div className="mb-8">
+            <div className="flex gap-2 items-start text-gray-700 text-xs md:text-sm mb-2">
+              <span className="min-w-[12px] mt-1">•</span>
+              <span>Expanded community reach from 800+ to potentially 1000+ members by developing an event booking website using NextJS, MongoDB, Clerk, and StripeAPI, streamlining registration and addressing social health concerns</span>
+            </div>
+            <div className="flex gap-2 items-start text-gray-700 text-xs md:text-sm">
+              <span className="min-w-[12px] mt-1">•</span>
+              <span>Created an interactive Quiz app with NextJS, Sanity.io, and MongoDB for summer school children and implemented engaging features such as leaderboards, increasing student engagement through gamified education</span>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
       title: "2024",
       content: (
         <div>
-          <p className="text-black text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          <p className="text-black text-sm md:text-base font-medium mb-2">
+            Software Engineering Fellow - Headstarter AI
           </p>
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src=""
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src=""
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/templates/startup-3.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/templates/startup-4.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "Early 2023",
-      content: (
-        <div>
-          <p className="text-black text-xs md:text-sm font-normal mb-8">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
-          </p>
-          <p className="text-black text-xs md:text-sm font-normal mb-8">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src=""
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src=""
-              alt="feature template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src=""
-              alt="bento template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src=""
-              alt="cards template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "Changelog",
-      content: (
-        <div>
-          <p className="text-black text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+          <p className="text-gray-700 text-xs md:text-sm font-normal mb-4">
+            NY, Hybrid
           </p>
           <div className="mb-8">
-            <div className="flex gap-2 items-center text-gray-700 text-xs md:text-sm">
-              ✅ Card grid component
+            <div className="flex gap-2 items-start text-gray-700 text-xs md:text-sm mb-2">
+              <span className="min-w-[12px] mt-1">•</span>
+              <span>Built 5+ AI apps and APIs using Python, NextJS, OpenAI, Pinecone, StripeAPI with as seen by 8000+ users</span>
             </div>
-            <div className="flex gap-2 items-center text-gray-700 text-xs md:text-sm">
-              ✅ Startup template Aceternity
+            <div className="flex gap-2 items-start text-gray-700 text-xs md:text-sm mb-2">
+              <span className="min-w-[12px] mt-1">•</span>
+              <span>Develop projects from design to deployment leading 4+ engineering fellows using MVC design patterns</span>
             </div>
-            <div className="flex gap-2 items-center text-gray-700 text-xs md:text-sm">
-              ✅ Random file upload lol
-            </div>
-            <div className="flex gap-2 items-center text-gray-700 text-xs md:text-sm">
-              ✅ Himesh Reshammiya Music CD
-            </div>
-            <div className="flex gap-2 items-center text-gray-700 text-xs md:text-sm">
-              ✅ Salman Bhai Fan Club registrations open
+            <div className="flex gap-2 items-start text-gray-700 text-xs md:text-sm">
+              <span className="min-w-[12px] mt-1">•</span>
+              <span>Coached by Amazon, Bloomberg and Capital One engineers on Agile, CI/CD, Git, and microservice patterns</span>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src=""
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src=""
-              alt="feature template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src=""
-              alt="bento template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src=""
-              alt="cards template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
+        </div>
+      ),
+    },
+    {
+      title: "2023",
+      content: (
+        <div>
+          <p className="text-black text-sm md:text-base font-medium mb-2">
+            Software Engineer and Math Tutor - University of Mount Union
+          </p>
+          <p className="text-gray-700 text-xs md:text-sm font-normal mb-4">
+            Alliance, OH
+          </p>
+          <div className="mb-8">
+            <div className="flex gap-2 items-start text-gray-700 text-xs md:text-sm mb-2">
+              <span className="min-w-[12px] mt-1">•</span>
+              <span>Improved grades of 90% of tutored students from failing grades of 55% to high achievers 85-90% within a semester by tutoring in Systems Programming, Data Structures, Algorithms, and Mathematics</span>
+            </div>
+            <div className="flex gap-2 items-start text-gray-700 text-xs md:text-sm">
+              <span className="min-w-[12px] mt-1">•</span>
+              <span>Analyzed and debugged code in JavaScript, Python, C#, and SQL using IDE tools and debugging techniques, while teaching key math concepts such as calculus, linear algebra, and statistics resulting in a 35% grade increase</span>
+            </div>
           </div>
+        </div>
+      ),
+    },
+    {
+      title: "2022 - Early 2023",
+      content: (
+        <div>
+          <p className="text-black text-sm md:text-base font-medium mb-2">
+            Software Engineer - ACBSP in VR Technologies
+          </p>
+          <p className="text-gray-700 text-xs md:text-sm font-normal mb-4">
+            Alliance, OH - Startup
+          </p>
+          <div className="mb-8">
+            <div className="flex gap-2 items-start text-gray-700 text-xs md:text-sm mb-2">
+              <span className="min-w-[12px] mt-1">•</span>
+              <span>Tasked with creating a VR action game in Unity to study psychological behavior, improving research studies</span>
+            </div>
+            <div className="flex gap-2 items-start text-gray-700 text-xs md:text-sm">
+              <span className="min-w-[12px] mt-1">•</span>
+              <span>Constructed a VR action game in Unity using C# and Oculus SDK, targeting the prefrontal cortex to reduce user stress and anxiety by 30%, through strategic object dismemberment scenarios</span>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Education",
+      content: (
+        <div>
+          <p className="text-black text-sm md:text-base font-medium mb-2">
+            University Of Mount Union
+          </p>
+          <p className="text-gray-700 text-xs md:text-sm font-normal mb-4">
+            Alliance, OH
+          </p>
+          <p className="text-gray-700 text-xs md:text-sm">
+            Bachelor of Science in Computer Science &apos;— Dean&apos;s List
+          </p>
+          <p className="text-gray-700 text-xs md:text-sm mb-4">
+            Graduated May 2024
+          </p>
         </div>
       ),
     },
@@ -154,7 +127,7 @@ export default function Experience() {
         Experience
       </h1>
       <p className="text-lg font-sans font-light leading-snug text-black max-w-[640px] text-wrap-pretty">
-        My Experience working as a developer
+        My professional journey as a software engineer
       </p>
       
       <div className="w-full mt-12">

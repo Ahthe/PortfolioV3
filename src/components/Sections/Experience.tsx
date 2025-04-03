@@ -122,17 +122,112 @@ export default function Experience() {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto w-full pt-48 pb-24 px-[20px] bg-white">
-      <h1 className="text-5xl md:text-7xl font-sans font-extralight text-black mb-4 tracking-[-0.02em]">
-        Experience
-      </h1>
-      <p className="text-lg font-sans font-light leading-snug text-black max-w-[640px] text-wrap-pretty">
-        My professional journey as a software engineer
-      </p>
-      
-      <div className="w-full mt-12">
-        <Timeline data={data} />
+    <section className="w-full min-h-screen relative">
+      <div className="relative flex flex-col items-start justify-start py-24 w-full min-h-screen text-black px-[20px]">
+        <div className="max-w-5xl mx-auto w-full">
+          <h1 className="text-5xl md:text-7xl font-sans font-extralight text-gray-700 mb-4 tracking-[-0.02em]">
+            Experience
+          </h1>
+          <p className="text-lg font-sans font-light leading-snug text-gray-700">
+            My professional journey as a software engineer.
+          </p>
+          <div className="w-full mt-12">
+            <Timeline data={data} />
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
+
+
+// "use client";
+
+// import React, { useState } from "react";
+// import ExperienceItem from "../ui/ExperienceItem"; // Import the new component
+
+// export default function Experience() {
+// 	// Keep your data definition here
+// 	const experienceItems = [
+// 		{
+// 			id: "0",
+// 			title: "2024 - Present",
+// 			subTitle: "Software Engineer - American Muslim Center Dearborn",
+// 			location: "Dearborn, MI, Hybrid",
+// 			details: [
+// 				"Expanded community reach from 800+ to potentially 1000+ members by developing an event booking website using NextJS, MongoDB, Clerk, and StripeAPI, streamlining registration and addressing social health concerns",
+// 				"Created an interactive Quiz app with NextJS, Sanity.io, and MongoDB for summer school children and implemented engaging features such as leaderboards, increasing student engagement through gamified education",
+// 			],
+// 		},
+// 		{
+// 			id: "1",
+// 			title: "2024",
+// 			subTitle: "Software Engineering Fellow - Headstarter AI",
+// 			location: "NY, Hybrid",
+// 			details: [
+// 				"Built 5+ AI apps and APIs using Python, NextJS, OpenAI, Pinecone, StripeAPI with as seen by 8000+ users",
+// 				"Develop projects from design to deployment leading 4+ engineering fellows using MVC design patterns",
+// 				"Coached by Amazon, Bloomberg and Capital One engineers on Agile, CI/CD, Git, and microservice patterns",
+// 			],
+// 		},
+// 		{
+// 			id: "2",
+// 			title: "2023",
+// 			subTitle: "Software Engineer and Math Tutor - University of Mount Union",
+// 			location: "Alliance, OH",
+// 			details: [
+// 				"Improved grades of 90% of tutored students from failing grades of 55% to high achievers 85-90% within a semester by tutoring in Systems Programming, Data Structures, Algorithms, and Mathematics",
+// 				"Analyzed and debugged code in JavaScript, Python, C#, and SQL using IDE tools and debugging techniques, while teaching key math concepts such as calculus, linear algebra, and statistics resulting in a 35% grade increase",
+// 			],
+// 		},
+// 		{
+// 			id: "3",
+// 			title: "2022 - Early 2023",
+// 			subTitle: "Software Engineer - ACBSP in VR Technologies",
+// 			location: "Alliance, OH - Startup",
+// 			details: [
+// 				"Tasked with creating a VR action game in Unity to study psychological behavior, improving research studies",
+// 				"Constructed a VR action game in Unity using C# and Oculus SDK, targeting the prefrontal cortex to reduce user stress and anxiety by 30%, through strategic object dismemberment scenarios",
+// 			],
+// 		},
+// 		{
+// 			id: "4",
+// 			title: "Education",
+// 			subTitle: "University Of Mount Union",
+// 			location: "Alliance, OH",
+// 			details: [
+// 				"Bachelor of Science in Computer Science '— Dean's List",
+// 				"Graduated May 2024",
+// 			],
+// 		},
+// 	];
+
+// 	return (
+// 		<section className="w-full min-h-screen relative bg-gray-100">
+// 			<div className="relative flex flex-col items-start justify-start py-24 w-full min-h-screen text-black px-[20px]">
+// 				<div className="max-w-5xl mx-auto w-full">
+// 					{/* Heading and Paragraph remain */}
+// 					<h1 className="text-5xl md:text-7xl font-sans font-extralight text-gray-700 mb-4 tracking-[-0.02em]">
+// 						Experience
+// 					</h1>
+// 					<p className="text-lg font-sans font-light leading-snug pb-12 text-gray-700">
+// 						My professional journey as a software engineer.
+// 					</p>
+
+// 					{/* Accordion Container */}
+// 					<div className="w-full flex flex-col border-t border-black/20">
+// 						{/* Map over data and render ExperienceItem */}
+// 						{experienceItems.map((item) => (
+// 							<ExperienceItem
+// 								key={item.id}
+// 								// item={item}
+// 								// isActive={activeAccordion === item.id}
+// 								// onToggle={toggleAccordion}
+// 							/>
+// 						))}
+// 					</div>
+// 				</div>
+// 			</div>
+// 		</section>
+// 	);
+// }

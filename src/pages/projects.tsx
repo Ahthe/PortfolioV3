@@ -9,6 +9,7 @@ import Hero from "@/components/Sections/Hero";
 import Work from "@/components/Sections/Work";
 import Showreel from "@/components/Sections/Showreel";
 import Experience from "@/components/Sections/Experience";
+import { Skills } from "@/components/Sections/Skills";
 
 const META_TITLE = "Syed Ahthesham Ali";
 const META_DESCRIPTION =
@@ -30,9 +31,10 @@ export default function projects() {
         <meta property="og:description" content={META_DESCRIPTION} />
       </Head>
       <PageTransitionWrapper>
-        <Experience />
         <FeaturedProjects />
         <Archive />
+        <Experience />
+        <Skills />
         <Footer />
       </PageTransitionWrapper>
     </>
